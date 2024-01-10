@@ -40,7 +40,7 @@ async def qrcode_create(update: Update, context: CallbackContext):
 
 
 if __name__ == '__main__':
-    application = ApplicationBuilder().token('6740103920:AAF1kKmq8e52XIARAOABmko46lKo2ga9fDA').build()
+    application = ApplicationBuilder().token('MY_TOKEN').build()
     
     start_handler = CommandHandler('start', start)
     teste_handler = MessageHandler(filters.TEXT & (~filters.COMMAND), teste)
